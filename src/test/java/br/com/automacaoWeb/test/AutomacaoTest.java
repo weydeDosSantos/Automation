@@ -17,7 +17,7 @@ public class AutomacaoTest extends BaseTest {
 
 		inicialPage.selecionarCombo("Bootstrap V4 Theme");
 		inicialPage.botaoAddCliente();
-		formularioPage.nomeCliente("Teste Sicredi");
+		formularioPage.nomeCliente("Teste Loud");
 		formularioPage.sobreNome("Teste");
 		formularioPage.nomeDoContato("weyde");
 		formularioPage.telefone("51 9999-9999");
@@ -39,7 +39,7 @@ public class AutomacaoTest extends BaseTest {
 
 		inicialPage.selecionarCombo("Bootstrap V4 Theme");
 		inicialPage.botaoAddCliente();
-		formularioPage.nomeCliente("Teste Sicredi");
+		formularioPage.nomeCliente("Teste Loud");
 		formularioPage.sobreNome("Teste");
 		formularioPage.nomeDoContato("weyde");
 		formularioPage.telefone("51 9999-9999");
@@ -54,7 +54,7 @@ public class AutomacaoTest extends BaseTest {
 		formularioPage.salvar();
 		formularioPage.esperaLink();
 		formularioPage.clicarLink();
-		inicialPage.procurarCliente("Teste Sicredi");
+		inicialPage.procurarCliente("Teste Loud");
 		formularioPage.esperaCheckBox();
 		inicialPage.checkBox();
 		inicialPage.botaoDeleta();

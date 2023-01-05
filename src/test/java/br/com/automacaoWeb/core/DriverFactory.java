@@ -1,9 +1,7 @@
 package br.com.automacaoWeb.core;
 
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 
 
 public class DriverFactory {
@@ -17,9 +15,10 @@ public class DriverFactory {
 		if (driver == null) {
 			switch(Propriedades.browser) {
 				case CHROME: driver = new ChromeDriver();break;
-				case EDGE: driver = new EdgeDriver();break;
+			default:
+				break;
 			}
-			driver.manage().window().setSize(new Dimension(1200, 765));
+			driver.manage().window().maximize();
 		}
 		return driver;
 	}

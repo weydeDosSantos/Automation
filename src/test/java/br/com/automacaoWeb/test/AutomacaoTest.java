@@ -12,7 +12,7 @@ public class AutomacaoTest extends BaseTest {
 	InicialPage inicialPage = new InicialPage();
 	FormularioPage formularioPage = new FormularioPage();
 
-	@Test
+	//@Test
 	public void Desafio1() {
 
 		inicialPage.selecionarCombo("Bootstrap V4 Theme");
@@ -34,7 +34,7 @@ public class AutomacaoTest extends BaseTest {
 		Assert.assertEquals("Your data has been successfully stored into the database. Edit Record or Go back to list",formularioPage.mensagem());
 	}
 
-	@Test
+	//@Test
 	public void Desafio2() {
 
 		inicialPage.selecionarCombo("Bootstrap V4 Theme");

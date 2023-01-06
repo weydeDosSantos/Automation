@@ -12,7 +12,6 @@ import org.junit.rules.TestName;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import br.com.automacaoWeb.core.BaseTest;
 import br.com.automacaoWeb.core.DriverFactory;
 import br.com.automacaoWeb.pages.FormularioPage;
 import br.com.automacaoWeb.pages.InicialPage;
@@ -21,7 +20,7 @@ import cucumber.api.java.es.Dado;
 import cucumber.api.java.it.Quando;
 import cucumber.api.java.pt.Entao;
 
-public class Steps  {
+public class Steps {
 
 	InicialPage inicialPage = new InicialPage();
 	FormularioPage formularioPage = new FormularioPage();
@@ -73,8 +72,8 @@ public class Steps  {
 	public TestName testName = new TestName();
 
 	@After
-	public void screenShot()  {
-	
+	public void screenShot() {
+
 		TakesScreenshot ss = (TakesScreenshot) getDriver();
 		File arquivo = ss.getScreenshotAs(OutputType.FILE);
 		try {

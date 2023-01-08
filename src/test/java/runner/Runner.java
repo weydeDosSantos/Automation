@@ -1,4 +1,4 @@
-package br.com.automacaoWeb.core;
+package runner;
 
 import org.junit.runner.RunWith;
 
@@ -12,7 +12,8 @@ import cucumber.api.junit.Cucumber;
 		features = {"src/test/resources/features"},
 		glue = "steps",
 		monochrome = true,
-		snippets = SnippetType.CAMELCASE
+		snippets = SnippetType.CAMELCASE,
+		dryRun = false
 		
 		)
 
